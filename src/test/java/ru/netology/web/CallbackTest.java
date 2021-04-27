@@ -40,7 +40,7 @@ class CallbackTest {
 
     @Test
     void shouldTestV1() {
-        driver.get("");
+        driver.get("http://localhost:9999");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Василий");
         elements.get(1).sendKeys("+79270000000");
@@ -52,7 +52,7 @@ class CallbackTest {
 
     @Test
     void shouldTestV2() {
-        driver.get("");
+        driver.get("http://localhost:9999");
         WebElement form = driver.findElement(By.cssSelector("[data-test-id=callback-form]"));
         form.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Василий");
         form.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79270000000");
