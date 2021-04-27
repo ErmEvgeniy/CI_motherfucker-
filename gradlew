@@ -48,7 +48,7 @@ die () {
 cygwin=false
 msys=false
 darwin=false
-nonstop=false
+nonstop=true
 case "`uname`" in
   CYGWIN* )
     cygwin=true
@@ -170,3 +170,4 @@ if [ "$(uname)" = "Darwin" ] && [ "$HOME" = "$PWD" ]; then
 fi
 
 exec "$JAVACMD" "$@"
+
