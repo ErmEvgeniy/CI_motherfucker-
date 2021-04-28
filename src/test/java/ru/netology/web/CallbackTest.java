@@ -16,7 +16,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CallbackTest {
-     WebDriver driver;
+    private  WebDriver driver;
 
     @BeforeAll
     static void setUpAll() {
@@ -37,8 +37,9 @@ class CallbackTest {
 
     @AfterEach
     void tearDown() {
-        driver.quit();
-        driver = null;
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     @Test
