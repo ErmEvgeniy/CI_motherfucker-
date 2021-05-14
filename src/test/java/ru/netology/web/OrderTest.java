@@ -98,6 +98,5 @@ public class OrderTest {
         String text = elements.get(1).getText();
         assertEquals("Поле обязательно для заполнения", text.trim());
         }
-        
 }
 
