@@ -15,12 +15,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CallbackTest {
+class OrderTest {
     private  WebDriver driver;
 
     @BeforeAll
     static void setUpAll() {
-       System.setProperty("webdriver.chrome.driver", "webdriver//chromedriver");
+       //System.setProperty("webdriver.chrome.driver", "webdriver//chromedriver");
         WebDriverManager.chromedriver().setup();
 
     }
