@@ -15,7 +15,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class OrderTest {
+public class OrderTest {
     private  WebDriver driver;
 
     @BeforeAll
@@ -97,7 +97,6 @@ class OrderTest {
         elements = driver.findElements(By.className("input__sub"));
         String text = elements.get(1).getText();
         assertEquals("Поле обязательно для заполнения", text.trim());
-
         }
         
 }
